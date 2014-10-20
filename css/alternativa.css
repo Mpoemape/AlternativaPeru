@@ -1,0 +1,73 @@
+/*
+A Design by Negocios Web Peru
+Author: Negocios Web Peru
+Author URL: http://negocioswebperu.com
+*/
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: verdana, geneva;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    background-color: #ffffff;
+}
+#topbar{
+    background-color: #5A0300;
+    color: #fff;
+    height: 2.19em;
+    top: 0;
+    width: 100%;
+}
+#backheader{
+
+}
+header{
+    border: 1px solid green;
+    overflow: hidden;
+    position: relative;
+}
+header figure{
+    float: left;
+    margin: 0 50px 0 0;
+}
+header nav{
+    
+}
+footer{
+    /* Color alternativo para versiones que no soporten degradados */  
+    background-color:#680200;  
+    /* Safari 4+ y Chrome 1+ */  
+    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #D71401), color-stop(1, #680200));  
+    /* Safari 5.1+ y Chrome 10+ */  
+    background-image:-webkit-linear-gradient(#D71401, #680200);  
+    /* Firefox 3.6+ */  
+    background-image:-moz-linear-gradient(top, #D71401, #680200);  
+    /* Opera 11.10+ */  
+    background-image:-o-linear-gradient(top, #D71401, #680200);  
+    /* Internet Explorer 5.5+ */  
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#D71401', EndColorStr='#680200');
+    border: 1px solid red;
+    color: #fff;
+    font-size: 0.7em;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+footer p:first-child{
+    margin-bottom: 2px;
+}
+footer p:last-child{
+    margin-top: 2px;
+    font-size: .8em;
+}
+footer a:hover{
+    color: yellow;
+}

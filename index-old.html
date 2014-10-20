@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="es"> 
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Alternativa del Peru | Fumigacion y desinfeccion de ambientes</title>
+        <meta name="description" content="Comercializacion de equipos contraincendios, prevencion contraincendios, extintores, gabinetes, señalizacion">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.minimum-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/alternativa.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+    <div id="wrapper">
+        <div id="topbar"></div>
+        <div id="backheader"></div>
+        <header> 
+            <div class="content">
+                <div id="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Alternativa del Peru"></a>
+                    
+                </div>
+            </div>
+            <a class="navigation-toggle" href="#" id="nav-open">
+                <span class="band"></span>                 
+                    Nav
+            </a>
+            <nav class="navigation" id="main-navigation">
+                <div class="navigation__main">
+                    <div class="menu-principal-v2-container">
+                        <ul id="menu-principal-v2" class="menu">
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Empresa</a></li>
+                            <li><a href="">Productos</a></li>
+                            <li><a href="">Servicios</a></li>
+                            <li><a href="">Clientes</a></li>
+                            <li><a href="">Información</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <!-- Los enlaces que necesites -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="slider">
+            <figure>
+                <img src="img/slide320_1.jpg" alt="Detalle de la imagen">
+                <figcaption>
+                    Aquí va el titulo de la imagen
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/slide320_2.jpg" alt="Detalle de la imagen">
+                <figcaption>
+                    Aquí va el titulo de la imagen
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/slide320_3.jpg" alt="Detalle de la imagen">
+                <figcaption>
+                    Aquí va el titulo de la imagen
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/slide320_4.jpg" alt="Detalle de la imagen">
+                <figcaption>
+                    Aquí va el titulo de la imagen
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/slide320_5.jpg" alt="Detalle de la imagen">
+                <figcaption>
+                    Aquí va el titulo de la imagen
+                </figcaption>
+            </figure>
+        </div>
+        <section>
+            <figure>
+                <img src="img/brigadas320.jpg" alt="Formación de brigadas de rescate">
+                <figcaption>
+                    Formación de brigadas de rescate
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/señaletica320.jpg" alt="Señalética y pintado de pistas">
+                <figcaption>
+                    Señalética y pintado de pistas
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/equipos320.jpg" alt="Equipos contra incendios">
+                <figcaption>
+                    Equipos contra incendios
+                </figcaption>
+            </figure>
+        </section>
+        <footer>
+            <p>Copyright 2014 - Alternativa del Perú SAC - All rights reserved.</p>
+            <p>Diseñado por <a href="#">NegociosWebPeru</a></p>
+        </footer>
+    </div>
+        <script src="js/javascript.js"></script>
+        <script>
+            var $j = jQuery.noConflict();
+
+
+$j(document).ready(function() {
+    var is_open = 0,
+        clickEventType = ((document.ontouchstart !== null) ? 'mouseup' : 'touchstart');
+   
+
+    function close_nav() {
+        $j('html').removeClass('nav-js');
+        is_open = 0;
+       
+    }
+
+    function open_nav() {
+        
+        $j('html').addClass('nav-js');
+        is_open = 1;
+    }
+
+    $j(document).on(clickEventType, function(e) {
+        if (is_open === 1) { // si está abierto
+
+            if (!$j(e.target).closest("#main-navigation").length > 0) { //y no pincho en navegación
+                close_nav(); //ciérrate
+            }
+        } else { // si está cerrado
+            if ($j(e.target).closest("#nav-open").length > 0) { //y pincho en nav open
+                open_nav(); //abro
+            }
+        }
+    });
+
+    
+});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+/*
+A Design by Negocios Web Peru
+Author: Negocios Web Peru
+Author URL: http://negocioswebperu.com
+*/
+/* En escritorio reseteamos el max-height y lo posicionamos relativamente */
+
+@media only screen and (min-width: 37.5em){
+    
+.navigation{
+  max-height: inherit; 
+  position: relative;
+  right: inherit; //anulamos su posición fuera de la pantalla
+  width: auto; //le damos todo el ancho que necesite
+  /*background: transparent;*/
+    background-color: #fff;
+}
+.navigation li{
+  display: inline-block; //los elementos van en línea
+} 
+.navigation-toggle{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+}
+
+@media only screen and (min-width: 48em){
+    
+    .navigation li{
+        background-color:transparent;
+        padding:inherit;
+        margin:inherit;
+        border-radius:inherit;
+        font-size:17px;
+        font-size:1.7rem;
+        display:inline-block
+    }
+}
+@media only screen and (min-width: 48em){
+    
+    .navigation li{
+        font-size:18px;
+        font-size:1.8rem
+    }
+}
